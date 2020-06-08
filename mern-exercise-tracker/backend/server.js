@@ -12,6 +12,7 @@ const app = express();
 //in terminal, the command 'export PORT=5000' (set on windows) sets the port to 5000
 const port = process.send.PORT || 5000;
 
+//using cors allows web app to use things from different sources
 app.use(cors());
 app.use(express.json()); //allows server to use json
 
